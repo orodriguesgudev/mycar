@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Especialista em SEO Local: Meta Tags Otimizadas para Birigui - SP -->
+    <title>My Car Birigui | Loja de Carros Seminovos, 0km e Financiamento em Birigui - SP</title>
+    <meta name="description" content="A melhor loja de carros em Birigui - SP. Seminovos revisados com garantia, veículos 0km, financiamento facilitado e a melhor avaliação do seu usado na Av. Governador Pedro de Toledo.">
+    <meta name="keywords" content="loja de carros Birigui, seminovos Birigui SP, comprar carro Birigui, financiamento de veículos Birigui, My Car Birigui">
+    <meta name="author" content="My Car Birigui">
+    <meta name="robots" content="index, follow">
+
+    <!-- Schema.org LocalBusiness (JSON-LD) para SEO Local de Alta Performance -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoDealer",
+      "name": "My Car Birigui",
+      "image": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80",
+      "description": "Concessionária multimarcas de veículos seminovos periciados e 0km em Birigui, São Paulo.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Governador Pedro de Toledo, 1450 - Centro",
+        "addressLocality": "Birigui",
+        "addressRegion": "SP",
+        "postalCode": "16200-027",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.2886,
+        "longitude": -50.3400
+      },
+      "telephone": "+55-18-3642-8890",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:30",
+          "closes": "13:00"
+        }
+      ],
+      "priceRange": "$$$"
+    }
+    </script>
+
+    <!-- Google Fonts: Montserrat (Títulos) & Inter (Textos e UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS3 Personalizado (UX/UI Designer) -->
+    <style>
+        :root {
+            --primary-dark: #0B132B;      /* Azul Marinho Profundo */
+            --secondary-dark: #1C2541;    /* Grafite Azulado */
+            --accent-red: #D90429;        /* Vermelho Automotivo Esportivo */
+            --accent-red-hover: #EF233C;  /* Vermelho Hover */
+            --accent-amber: #F59E0B;      /* Dourado/Âmbar Premium */
+            --light-bg: #F8FAFC;          /* Fundo Claro Limpo */
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --card-shadow: 0 10px 30px rgba(11, 19, 43, 0.08);
+            --card-shadow-hover: 0 20px 40px rgba(11, 19, 43, 0.16);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Navbar Estilizada */
+        .navbar-custom {
+            background-color: rgba(11, 19, 43, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+            padding: 14px 0;
+        }
+
+        .navbar-custom.scrolled {
+            padding: 10px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .brand-logo {
+            font-weight: 900;
+            font-size: 1.65rem;
+            letter-spacing: -0.5px;
+            color: #FFFFFF !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-icon-box {
+            background: linear-gradient(135deg, var(--accent-red), #9B001C);
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(217, 4, 41, 0.4);
+        }
+
+        .brand-logo span.highlight {
+            color: var(--accent-red);
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 8px 16px !important;
+            transition: color 0.25s ease;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #FFFFFF !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 16px;
+            right: 16px;
+            height: 2px;
+            background-color: var(--accent-red);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        /* Botões Personalizados */
+        .btn-accent {
+            background-color: var(--accent-red);
+            color: #FFFFFF;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 26px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 18px rgba(217, 4, 41, 0.3);
+        }
+
+        .btn-accent:hover {
+            background-color: var(--accent-red-hover);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(217, 4, 41, 0.45);
+        }
+
+        .btn-outline-light-custom {
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            color: #FFFFFF;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 11px 26px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-light-custom:hover {
+            background-color: #FFFFFF;
+            color: var(--primary-dark);
+            border-color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section (Home) */
+        .hero-section {
+            position: relative;
+            min-height: 92vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(115deg, rgba(11, 19, 43, 0.94) 0%, rgba(28, 37, 65, 0.82) 55%, rgba(11, 19, 43, 0.7) 100%),
+                        url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=85') center/cover no-repeat;
+            padding-top: 100px;
+            padding-bottom: 80px;
+            color: #FFFFFF;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11, 0.15);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            color: #FCD34D;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 22px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.12;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            color: rgba(255, 255, 255, 0.82);
+            font-weight: 400;
+            line-height: 1.65;
+            max-width: 600px;
+            margin-bottom: 34px;
+        }
+
+        /* Barra de Benefícios / Diferenciais (CRO) */
+        .benefits-bar {
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .benefit-card {
+            background: #FFFFFF;
+            border-radius: 14px;
+            padding: 24px 22px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(11, 19, 43, 0.05);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(217, 4, 41, 0.08);
+            color: var(--accent-red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Títulos de Seção */
+        .section-tag {
+            color: var(--accent-red);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-weight: 800;
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            color: var(--primary-dark);
+            margin-bottom: 14px;
+        }
+
+        /* Filtros de Categoria (Produto) */
+        .filter-btn {
+            background-color: #FFFFFF;
+            color: var(--text-dark);
+            border: 1px solid #E2E8F0;
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary-dark);
+            color: var(--primary-dark);
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-dark);
+            color: #FFFFFF;
+            border-color: var(--primary-dark);
+            box-shadow: 0 6px 15px rgba(11, 19, 43, 0.2);
+        }
+
+        /* Cards de Veículos */
+        .car-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(11, 19, 43, 0.06);
+            box-shadow: var(--card-shadow);
+            transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .car-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .car-img-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+            background-color: #E2E8F0;
+        }
+
+        .car-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .car-card:hover .car-img-wrapper img {
+            transform: scale(1.06);
+        }
+
+        .car-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+
+        .badge-oferta {
+            background-color: var(--accent-red);
+            color: #FFFFFF;
+        }
+
+        .badge-unico {
+            background-color: var(--primary-dark);
+            color: #FFFFFF;
+        }
+
+        .badge-destaque {
+            background-color: var(--accent-amber);
+            color: #0B132B;
+        }
+
+        .car-category-tag {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(11, 19, 43, 0.8);
+            backdrop-filter: blur(4px);
+            color: #FFFFFF;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .car-body {
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .car-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .car-version {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .car-specs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            background-color: #F8FAFC;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            font-size: 0.8rem;
+            color: var(--text-dark);
+            text-align: center;
+        }
+
+        .car-specs div i {
+            color: var(--accent-red);
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 2px;
+        }
+
+        .car-price-box {
+            margin-top: auto;
+            padding-top: 14px;
+            border-top: 1px solid #F1F5F9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .car-price-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .car-price {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.35rem;
+            color: var(--primary-dark);
+        }
+
+        /* Seção Serviços */
+        .services-section {
+            background-color: var(--primary-dark);
+            color: #FFFFFF;
+            position: relative;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 16px;
+            padding: 30px 26px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(217, 4, 41, 0.5);
+            transform: translateY(-6px);
+        }
+
+        .service-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--accent-red), #9B001C);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(217, 4, 41, 0.3);
+        }
+
+        .service-card h4 {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+        }
+
+        .service-card p {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.94rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Footer Completo */
+        .footer-custom {
+            background-color: #070D1F;
+            color: rgba(255, 255, 255, 0.78);
+            padding-top: 70px;
+            padding-bottom: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-title {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.72);
+            text-decoration: none;
+            transition: color 0.2s ease, padding-left 0.2s ease;
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: #FFFFFF;
+            padding-left: 5px;
+        }
+
+        .social-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #FFFFFF;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background: var(--accent-red);
+            color: #FFFFFF;
+            transform: translateY(-3px);
+        }
+
+        /* Botão Flutuante WhatsApp (CRO) */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.9rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+            z-index: 1050;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse-green 2.5s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1EBE5D;
+            color: #FFFFFF;
+            transform: scale(1.08);
+        }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Animações suaves ao rolar (Scroll Reveal) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Ajustes Responsivos Mobile */
+        @media (max-width: 767.98px) {
+            .hero-section {
+                min-height: auto;
+                padding-top: 110px;
+                padding-bottom: 90px;
+                text-align: center;
+            }
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .benefits-bar {
+                margin-top: -35px;
+            }
+            .car-price-box {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .car-price-box .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- =====================================================================
+         1. NAVEGAÇÃO (NAVBAR FIXA RESPONSIVA)
+    ====================================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand brand-logo" href="#home">
+                <div class="brand-icon-box">
+                    <i class="bi bi-car-front-fill text-white fs-5"></i>
+                </div>
+                <span>MY<span class="highlight">CAR</span></span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produto">Produto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button type="button" class="btn btn-accent btn-sm px-4 py-2 w-100" onclick="abrirModalContato('Atendimento Geral / Simulação')">
+                            <i class="bi bi-whatsapp me-1"></i> Falar com Consultor
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =====================================================================
+         1.1 HOME (HERO SECTION DE ALTO IMPACTO)
+    ====================================================================== -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-badge">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Referência Automotiva em Birigui - SP e Região</span>
+                    </div>
+                    <h1 class="hero-title">
+                        O carro dos seus sonhos com <span style="color: var(--accent-red);">procedência</span> e confiança em Birigui.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Na <strong>My Car</strong>, cada veículo seminovo passa por rigorosa perícia cautelar e revisão certificada. Trabalhamos também com veículos 0km multimarcas e aprovação de crédito rápida.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#produto" class="btn btn-accent btn-lg">
+                            <i class="bi bi-grid-fill me-2"></i> Ver Estoque Completo
+                        </a>
+                        <button type="button" class="btn btn-outline-light-custom btn-lg" onclick="abrirModalContato('Consultoria de Compra / Avaliação')">
+                            <i class="bi bi-chat-dots-fill me-2"></i> Falar com Consultor
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de Destaques e Benefícios (CRO) -->
+    <section class="benefits-bar">
+        <div class="container">
+            <div class="row g-3 g-md-4">
+                <div class="col-md-4">
+                    <div class="benefit-card d-flex align-items-center gap-3">
+                        <div class="benefit-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1 fs-6 text-dark">Garantia e Perícia 100%</h5>
+                            <p class="text-muted small mb-0">Laudo cautelar aprovado e revisão mecânica completa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card d-flex align-items-center gap-3">
+                        <div class="benefit-icon">
+                            <i class="bi bi-bank"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1 fs-6 text-dark">Financiamento Facilitado</h5>
+                            <p class="text-muted small mb-0">Parceria com os principais bancos e taxas reduzidas em até 60x.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card d-flex align-items-center gap-3">
+                        <div class="benefit-icon">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1 fs-6 text-dark">Avaliação Justa no Usado</h5>
+                            <p class="text-muted small mb-0">Valorizamos seu carro na troca com pagamento à vista ou troco na troca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         2. PRODUTO (VITRINE DE VEÍCULOS COM FILTRO INTERATIVO JS)
+    ====================================================================== -->
+    <section id="produto" class="py-5 my-4">
+        <div class="container">
+            <div class="text-center max-w-700 mx-auto mb-5 reveal">
+                <span class="section-tag">Showroom Digital</span>
+                <h2 class="section-title">Nossos Veículos em Destaque</h2>
+                <p class="text-muted mx-auto" style="max-width: 620px;">
+                    Explore nosso estoque selecionado em Birigui. Utilize os filtros abaixo para encontrar a categoria ideal para o seu dia a dia ou sua família.
+                </p>
+
+                <!-- Botões de Filtro Interativo (JavaScript) -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="filterButtons">
+                    <button class="filter-btn active" data-category="todos">Todos os Veículos</button>
+                    <button class="filter-btn" data-category="SUVs">SUVs</button>
+                    <button class="filter-btn" data-category="Sedans">Sedans</button>
+                    <button class="filter-btn" data-category="Hatchbacks">Hatchbacks</button>
+                    <button class="filter-btn" data-category="Picapes">Picapes</button>
+                </div>
+            </div>
+
+            <!-- Grid Responsivo de Cards de Veículos (Renderizado via JS) -->
+            <div class="row g-4" id="vehiclesGrid">
+                <!-- Os cards serão injetados dinamicamente pelo JavaScript -->
+            </div>
+
+            <!-- Chamada Extra de Conversão -->
+            <div class="text-center mt-5 reveal">
+                <div class="p-4 p-md-5 rounded-4 bg-white border shadow-sm d-inline-block w-100">
+                    <div class="row align-items-center text-start">
+                        <div class="col-lg-8 mb-3 mb-lg-0">
+                            <h4 class="fw-bold text-dark mb-1">Não encontrou o modelo específico que procura?</h4>
+                            <p class="text-muted mb-0">Temos acesso a uma rede exclusiva de veículos 0km e seminovos sob encomenda em todo o estado de São Paulo.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <button type="button" class="btn btn-accent w-100 w-lg-auto" onclick="abrirModalContato('Encomenda de Veículo Específico')">
+                                <i class="bi bi-search me-2"></i> Encomendar Veículo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         3. SERVIÇOS (SOLUÇÕES AUTOMOTIVAS COMPLETAS)
+    ====================================================================== -->
+    <section id="servicos" class="services-section py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5 reveal">
+                <span class="section-tag" style="color: var(--accent-amber);">Soluções Completas</span>
+                <h2 class="section-title text-white">Nossos Serviços em Birigui</h2>
+                <p class="mx-auto" style="color: rgba(255,255,255,0.75); max-width: 640px;">
+                    Cuidamos de cada etapa da negociação para você sair dirigindo com tranquilidade, segurança jurídica e as melhores condições financeiras da região.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Serviço 1 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-car-front"></i>
+                        </div>
+                        <h4>Compra e Venda de Seminovos e 0km</h4>
+                        <p>Estoque diversificado de seminovos selecionados e encomenda de veículos 0km de todas as montadoras com entrega rápida e transparente em Birigui.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-percent"></i>
+                        </div>
+                        <h4>Financiamento e Consórcio</h4>
+                        <p>Simulação na hora com as menores taxas do mercado, planos com ou sem entrada e cartas de crédito contempladas ou programadas.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h4>Avaliação e Troca com Troco</h4>
+                        <p>Avaliação técnica justa e transparente do seu veículo atual. Use seu carro como entrada ou saia com dinheiro no bolso na troca por um modelo de menor valor.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-file-earmark-check"></i>
+                        </div>
+                        <h4>Despachante e Documentação</h4>
+                        <p>Sem burocracia para você. Nossa equipe cuida da transferência, licenciamento, emplacamento Mercosul e regularização completa junto ao Detran-SP.</p>
+                    </div>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-patch-check"></i>
+                        </div>
+                        <h4>Garantia Estendida e Revisão Certificada</h4>
+                        <p>Todos os carros passam por checklist rigoroso de mecânica, elétrica e estrutura, com opção de garantia estendida de até 1 ano em todo o Brasil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         4. FOOTER (RODAPÉ COMPLETO COM SEO LOCAL BIRIGUI - SP)
+    ====================================================================== -->
+    <footer id="contato" class="footer-custom">
+        <div class="container">
+            <div class="row g-4 pb-5">
+                <!-- Coluna 1: Marca e Sobre -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="brand-logo text-decoration-none mb-3" href="#home">
+                        <div class="brand-icon-box">
+                            <i class="bi bi-car-front-fill text-white fs-5"></i>
+                        </div>
+                        <span>MY<span class="highlight">CAR</span></span>
+                    </a>
+                    <p class="small lh-lg mb-4">
+                        Sua concessionária multimarcas de confiança em Birigui - SP. Compromisso com a qualidade, transparência na negociação e realização do seu sonho sobre quatro rodas.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram My Car Birigui">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook My Car Birigui">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/5518997428890?text=Olá!%20Vim%20pelo%20site%20da%20My%20Car%20Birigui." target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp My Car Birigui">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Navegação</h5>
+                    <ul class="footer-links small">
+                        <li><a href="#home"><i class="bi bi-chevron-right me-1 text-danger"></i> Home</a></li>
+                        <li><a href="#produto"><i class="bi bi-chevron-right me-1 text-danger"></i> Produto / Estoque</a></li>
+                        <li><a href="#servicos"><i class="bi bi-chevron-right me-1 text-danger"></i> Serviços</a></li>
+                        <li><a href="#contato"><i class="bi bi-chevron-right me-1 text-danger"></i> Localização</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Contato e Endereço (Birigui - SP) -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Onde Estamos</h5>
+                    <ul class="list-unstyled small lh-lg mb-0">
+                        <li class="mb-2 d-flex gap-2">
+                            <i class="bi bi-geo-alt-fill text-danger mt-1"></i>
+                            <span>Av. Governador Pedro de Toledo, 1450 - Centro, Birigui - SP, CEP 16200-027</span>
+                        </li>
+                        <li class="mb-2 d-flex gap-2">
+                            <i class="bi bi-telephone-fill text-danger mt-1"></i>
+                            <span>(18) 3642-8890</span>
+                        </li>
+                        <li class="d-flex gap-2">
+                            <i class="bi bi-whatsapp text-success mt-1"></i>
+                            <span>(18) 99742-8890</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Horário de Funcionamento -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Atendimento</h5>
+                    <ul class="list-unstyled small lh-lg mb-3">
+                        <li class="d-flex justify-content-between border-bottom border-secondary border-opacity-25 pb-1 mb-1">
+                            <span>Segunda a Sexta:</span>
+                            <span class="text-white fw-semibold">08:00 às 18:30</span>
+                        </li>
+                        <li class="d-flex justify-content-between border-bottom border-secondary border-opacity-25 pb-1 mb-1">
+                            <span>Sábado:</span>
+                            <span class="text-white fw-semibold">08:30 às 13:00</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span>Domingo:</span>
+                            <span class="text-danger fw-semibold">Fechado</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-light btn-sm w-100" onclick="abrirModalContato('Agendar Visita na Loja')">
+                        <i class="bi bi-calendar-check me-1"></i> Agendar Test-Drive
+                    </button>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary border-opacity-25 pt-4 text-center small">
+                <p class="mb-0">&copy; 2026 <strong>My Car Birigui</strong> - Todos os direitos reservados. Desenvolvido com excelência automotiva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5518997428890?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20veículos%20da%20My%20Car%20Birigui." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float" 
+       title="Fale conosco pelo WhatsApp"
+       aria-label="Fale conosco pelo WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- =====================================================================
+         MODAL DE INTERESSE / CAPTURA DE LEAD (ANALISTA DE CONVERSÃO / CRO)
+    ====================================================================== -->
+    <div class="modal fade" id="interestModal" tabindex="-1" aria-labelledby="interestModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg overflow-hidden">
+                <div class="modal-header text-white border-0" style="background-color: var(--primary-dark);">
+                    <div>
+                        <h5 class="modal-title fw-bold" id="interestModalLabel">Tenho Interesse</h5>
+                        <small class="text-white-50">Atendimento rápido da equipe My Car Birigui</small>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="leadForm" novalidate>
+                        <div class="mb-3">
+                            <label for="selectedVehicle" class="form-label fw-semibold small text-uppercase text-muted">Veículo / Assunto Selecionado</label>
+                            <input type="text" class="form-control bg-light fw-bold text-dark" id="selectedVehicle" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientName" class="form-label fw-semibold small">Seu Nome Completo *</label>
+                            <input type="text" class="form-control" id="clientName" placeholder="Ex: João Silva" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientPhone" class="form-label fw-semibold small">Seu WhatsApp com DDD *</label>
+                            <input type="tel" class="form-control" id="clientPhone" placeholder="Ex: (18) 99999-9999" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentType" class="form-label fw-semibold small">Como pretende negociar?</label>
+                            <select class="form-select" id="paymentType">
+                                <option value="À Vista">Pagamento à Vista</option>
+                                <option value="Financiamento">Simular Financiamento</option>
+                                <option value="Troca + Financiamento">Dar meu Usado na Troca</option>
+                                <option value="Consórcio">Carta de Consórcio</option>
+                            </select>
+                        </div>
+                        <div id="formFeedback" class="alert d-none small py-2 mb-3" role="alert"></div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-accent py-2">
+                                <i class="bi bi-whatsapp me-2"></i> Continuar no WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Personalizado (Front-end + CRO) -->
+    <script>
+        /**
+         * Banco de Dados Mockado do Estoque da My Car Birigui
+         * Contém 6 veículos variados entre SUVs, Sedans, Hatchbacks e Picapes
+         */
+        const vehiclesData = [
+            {
+                id: 1,
+                name: "Jeep Compass Longitude",
+                version: "1.3 T270 Turbo Flex Aut.",
+                category: "SUVs",
+                year: "2023/2023",
+                km: "24.500 km",
+                transmission: "Automático",
+                price: "R$ 138.900",
+                badge: "Único Dono",
+                badgeClass: "badge-unico",
+                image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 2,
+                name: "Toyota Corolla Altis",
+                version: "2.0 Dynamic Force Direct Shift",
+                category: "Sedans",
+                year: "2022/2023",
+                km: "31.000 km",
+                transmission: "CVT 10M",
+                price: "R$ 142.500",
+                badge: "Oferta",
+                badgeClass: "badge-oferta",
+                image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 3,
+                name: "Volkswagen Polo Highline",
+                version: "1.0 200 TSI Total Flex Aut.",
+                category: "Hatchbacks",
+                year: "2024/2024",
+                km: "9.800 km",
+                transmission: "Automático",
+                price: "R$ 104.900",
+                badge: "Garantia Fábrica",
+                badgeClass: "badge-destaque",
+                image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 4,
+                name: "Toyota Hilux SRX 4x4",
+                version: "2.8 TDI Diesel Automática",
+                category: "Picapes",
+                year: "2022/2022",
+                km: "48.200 km",
+                transmission: "Automático",
+                price: "R$ 249.000",
+                badge: "Revisada",
+                badgeClass: "badge-unico",
+                image: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 5,
+                name: "Hyundai Creta Ultimate",
+                version: "2.0 Flex Automático Teto Solar",
+                category: "SUVs",
+                year: "2023/2024",
+                km: "18.400 km",
+                transmission: "Automático",
+                price: "R$ 146.900",
+                badge: "Oferta",
+                badgeClass: "badge-oferta",
+                image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 6,
+                name: "Honda Civic Touring",
+                version: "1.5 Turbo Gasolina CVT",
+                category: "Sedans",
+                year: "2021/2021",
+                km: "39.000 km",
+                transmission: "CVT",
+                price: "R$ 139.900",
+                badge: "Impecável",
+                badgeClass: "badge-destaque",
+                image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80"
+            }
+        ];
+
+        const vehiclesGrid = document.getElementById('vehiclesGrid');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        let interestModalInstance = null;
+
+        /**
+         * Renderiza os cards de veículos com base na categoria selecionada
+         */
+        function renderVehicles(category = 'todos') {
+            vehiclesGrid.innerHTML = '';
+
+            const filtered = category === 'todos'
+                ? vehiclesData
+                : vehiclesData.filter(car => car.category === category);
+
+            filtered.forEach(car => {
+                const col = document.createElement('div');
+                col.className = 'col-md-6 col-lg-4';
+
+                col.innerHTML = `
+                    <article class="car-card">
+                        <div class="car-img-wrapper">
+                            <span class="car-badge ${car.badgeClass}">${car.badge}</span>
+                            <span class="car-category-tag">${car.category}</span>
+                            <img src="${car.image}" alt="${car.name} ${car.version} em Birigui - My Car" loading="lazy"
+                                 onerror="this.src='https://placehold.co/800x500/0B132B/FFFFFF?text=My+Car+Birigui'">
+                        </div>
+                        <div class="car-body">
+                            <h3 class="car-title">${car.name}</h3>
+                            <p class="car-version">${car.version}</p>
+
+                            <div class="car-specs">
+                                <div>
+                                    <i class="bi bi-calendar3"></i>
+                                    <span>${car.year}</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-speedometer2"></i>
+                                    <span>${car.km}</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-gear-wide-connected"></i>
+                                    <span>${car.transmission}</span>
+                                </div>
+                            </div>
+
+                            <div class="car-price-box">
+                                <div>
+                                    <span class="car-price-label">Valor à vista</span>
+                                    <span class="car-price">${car.price}</span>
+                                </div>
+                                <button type="button" class="btn btn-accent btn-sm px-3 py-2" 
+                                        onclick="abrirModalContato('${car.name} (${car.year}) - ${car.price}')">
+                                    Tenho Interesse
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                `;
+                vehiclesGrid.appendChild(col);
+            });
+        }
+
+        /**
+         * Configura os eventos de clique dos botões de filtro
+         */
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const category = btn.getAttribute('data-category');
+                renderVehicles(category);
+            });
+        });
+
+        /**
+         * Abre o modal de interesse pré-preenchido com o carro ou serviço
+         */
+        function abrirModalContato(vehicleInfo) {
+            const vehicleInput = document.getElementById('selectedVehicle');
+            const feedbackEl = document.getElementById('formFeedback');
+            
+            vehicleInput.value = vehicleInfo;
+            feedbackEl.classList.add('d-none');
+
+            if (!interestModalInstance) {
+                interestModalInstance = new bootstrap.Modal(document.getElementById('interestModal'));
+            }
+            interestModalInstance.show();
+        }
+
+        /**
+         * Processa o formulário do modal e redireciona para o WhatsApp da loja em Birigui
+         */
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const vehicle = document.getElementById('selectedVehicle').value;
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const payment = document.getElementById('paymentType').value;
+            const feedbackEl = document.getElementById('formFeedback');
+
+            if (!name || !phone) {
+                feedbackEl.textContent = 'Por favor, preencha seu nome e WhatsApp para continuarmos.';
+                feedbackEl.className = 'alert alert-danger small py-2 mb-3';
+                feedbackEl.classList.remove('d-none');
+                return;
+            }
+
+            // Monta mensagem persuasiva para o WhatsApp da My Car Birigui
+            const storeWhatsApp = '5518997428890';
+            const message = `Olá, equipe *My Car Birigui*! Meu nome é *${name}* (${phone}).\n\nTenho interesse em: *${vehicle}*\nForma de negociação pretendida: *${payment}*.\n\nPodem me passar mais detalhes?`;
+            const whatsappUrl = `https://wa.me/${storeWhatsApp}?text=${encodeURIComponent(message)}`;
+
+            feedbackEl.textContent = 'Redirecionando você para o WhatsApp de um consultor em Birigui...';
+            feedbackEl.className = 'alert alert-success small py-2 mb-3';
+            feedbackEl.classList.remove('d-none');
+
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+                interestModalInstance.hide();
+                this.reset();
+            }, 800);
+        });
+
+        /**
+         * Efeito de sombra na Navbar e Scrollspy ativo ao rolar
+         */
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 40) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Atualiza link ativo na navegação
+            const sections = document.querySelectorAll('header[id], section[id], footer[id]');
+            const scrollPos = window.scrollY + 140;
+
+            sections.forEach(sec => {
+                const top = sec.offsetTop;
+                const height = sec.offsetHeight;
+                const id = sec.getAttribute('id');
+
+                if (scrollPos >= top && scrollPos < top + height) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        /**
+         * Fecha o menu mobile automaticamente ao clicar em um link
+         */
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.getElementById('navbarNav');
+                if (navbarCollapse.classList.contains('show')) {
+                    bootstrap.Collapse.getInstance(navbarCollapse).hide();
+                }
+            });
+        });
+
+        /**
+         * Animações suaves ao rolar (Intersection Observer)
+         */
+        function initScrollReveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            reveals.forEach(el => observer.observe(el));
+        }
+
+        // Inicialização ao carregar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            renderVehicles('todos');
+            initScrollReveal();
+        });
+    </script>
+</body>
+</html>
